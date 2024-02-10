@@ -1,29 +1,12 @@
-# vite-comics
+# Descrizione:
+- incapsulare le componenti
+# Bonus:
+- Creare un componente aggiuntivo per gestire la fascia azzurra con le icone.
+- popolare dinamicamente le voci del menu nell'header. Ciascuna ha un href ed un testo, che tipo di struttura dati usereste? Dove la scrivo? l'oggetto data del componente AppHeader potrebbe essere il posto giusto.
+# Font:
+https://fonts.google.com/specimen/Open+Sans.
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+# Descrizione-day2 :
+- create un nuovo componente che rappresenterà le card dei fumetti.
+- Utilizzate i dati presenti nel file json che trovate in allegato e passateli al componente Card tramite props.
+- Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con css plain.
