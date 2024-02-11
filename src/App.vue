@@ -14,16 +14,12 @@ export default{
 },
   data(){
     return{
+      sentence:"",
       
     }
 
   },
-  created(){
-    axios.get('https://flynn.boolean.careers/exercises/api/random/int')
-    .then(function(response){
-      console.log(response);
-    })
-  }, //potevo usare anche mounted()
+  
 }
 </script>
 
