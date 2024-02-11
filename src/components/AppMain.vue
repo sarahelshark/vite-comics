@@ -111,7 +111,6 @@ export default {
               <h5>lorem</h5>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -120,13 +119,17 @@ export default {
 </template>
 
 <style scoped>
-.container {
-  flex-direction: column;
-}
-.comics{
+.comics {
+  & h3 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--dc-primary);
+    margin: -2rem 0 0.5rem;
+  }
   & img {
     aspect-ratio: 1;
     object-fit: cover;
+    object-position: top;
   }
 }
 </style>
