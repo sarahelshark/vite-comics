@@ -14,11 +14,15 @@
 body{
   font-family:  'Open Sans', sans-serif;
   background-color: var(--dc-dark);
+  color: var(--dc-light);
 }
 
 
 img{
   max-width: 100%;
+}
+a{
+  text-decoration: none;
 }
 .container{
   width: 100%;
@@ -60,14 +64,13 @@ img{
 }
 @media screen and (min-width: 768px){
   .container{
-    max-width: 720px;
+    max-width: 897px;
   }
    .col-md-6{
     width: 50%;
   }
-  
- 
 }
+
 @media screen and (min-width: 1024px){
   .container{
     max-width: 920px;

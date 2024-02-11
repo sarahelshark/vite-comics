@@ -11,7 +11,9 @@ export default{
 </script>
 
 <template>
-   <h3>{{ message }}</h3>
+   <main>
+    main
+   </main>
 </template>
 
 <style >

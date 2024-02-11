@@ -11,7 +11,9 @@ export default{
 </script>
 
 <template>
-   <h4>{{ message }}</h4>
+   <footer>
+    footer
+   </footer>
 </template>
 
 <style >

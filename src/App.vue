@@ -14,7 +14,7 @@ export default{
 },
   data(){
     return{
-      message:'Hello',
+      
     }
 
   },
@@ -22,7 +22,6 @@ export default{
 </script>
 
 <template>
-   <h1>{{ message }}</h1>
 
    <AppHeader></AppHeader>
    <AppMain></AppMain>
