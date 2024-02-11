@@ -1,3 +1,4 @@
+/*#region common*/
 *{
   margin: 0;
   padding: 0;
@@ -10,20 +11,25 @@
   --dc-secondary:#313130;
 
 }
-
 body{
   font-family:  'Open Sans', sans-serif;
   background-color: var(--dc-dark);
   color: var(--dc-light);
 }
-
-
 img{
   max-width: 100%;
 }
 a{
   text-decoration: none;
 }
+
+/*#endregion common*/
+
+
+/*#region utilities*/
+
+/*#endregion utilities*/
+
 .container{
   width: 100%;
   display: flex;
@@ -64,19 +70,19 @@ a{
 }
 @media screen and (min-width: 768px){
   .container{
-    max-width: 897px;
+    max-width: 720px;
   }
-   .col-md-6{
-    width: 50%;
+   .col-md-4{
+    width: calc(100% / 12 * 4);
   }
 }
 
 @media screen and (min-width: 1024px){
   .container{
-    max-width: 920px;
+    max-width: 1200px;
     
   }
-  .col-lg-4{
-    width: calc(100% / 12 * 4);
+  .col-lg-2{
+    width: calc(100% / 12 * 2);
   }
 }
