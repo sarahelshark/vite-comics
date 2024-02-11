@@ -4,9 +4,7 @@ import ComicsList from "./ComicsList.vue";
 export default {
   name: "App",
   data() {
-    return {
-    
-    };
+    return {};
   },
   components: { AppJumbotron, ComicsList },
 };
@@ -19,35 +17,49 @@ export default {
 
     <!--Comics section-->
     <ComicsList></ComicsList>
+
     <!--banner-->
+    <div class="banner">
+      <div class="container">
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+        <div class="item">
+          <img height="60" src="/img/buy-comics-digital-comics.png" alt="" />
+          <span>Digital comics</span>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
 <style scoped>
-.comics {
-  & h3 {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--dc-primary);
-    margin: -2rem 0 0.5rem;
-  }
-  & img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: top;
-  }
-}
-.load_more {
-  text-align: center;
-  margin: 2rem 0 1rem;
-  justify-content: center;
-  width: 100%;
+.banner {
+  background-color: var(--dc-primary);
+  padding: 2rem 0;
 
-  & > button {
-    background-color: var(--dc-primary);
-    color: var(--dc-light);
-    padding: 0.5rem 2rem;
-    border-style: none;
+  & > .container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+  & .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }
 </style>
