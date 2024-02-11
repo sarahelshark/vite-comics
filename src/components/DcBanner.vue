@@ -33,6 +33,7 @@ export default {
       console.log(new URL(`../assets/img/${name}.png`, import.meta.url));
       return new URL(`../assets/img/${name}.png`, import.meta.url).href
     }
+    /*studio STATIC ASSET HANDLING in vue docs */
   }
 }
 </script>
