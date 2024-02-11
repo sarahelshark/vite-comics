@@ -1,21 +1,25 @@
-<script >
-export default{
-  name:'App',
-  data(){
-    return{
-      message:'Hello',
-    }
+<script>
+import AppJumbotron from './App.Jumbotron.vue';
 
-  },
-}
+export default {
+    name: "App",
+    data() {
+        return {
+        };
+    },
+    components: { AppJumbotron }
+};
 </script>
 
 <template>
-   <main>
-    main
-   </main>
+  <main>
+    <!--Jumbotron-->
+    <AppJumbotron></AppJumbotron>
+    <!--Comics section-->
+    <!--banner-->
+  </main>
 </template>
 
-<style >
+<style>
 
 </style>
