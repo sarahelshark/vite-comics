@@ -112,7 +112,13 @@ export default {
             </div>
           </div>
         </div>
+        <!--/.row-->
+
+        <div class="load_more">
+          <button>load more</button>
+        </div>
       </div>
+      <!--/.container-->
     </section>
     <!--banner-->
   </main>
@@ -127,9 +133,22 @@ export default {
     margin: -2rem 0 0.5rem;
   }
   & img {
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: top;
+  }
+}
+.load_more {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  justify-content: center;
+  width: 100%;
+
+  & > button {
+    background-color: var(--dc-primary);
+    color: var(--dc-light);
+    padding: 0.5rem 2rem;
+    border-style: none;
   }
 }
 </style>
