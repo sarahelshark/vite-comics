@@ -1,8 +1,9 @@
 <script>
-import AppJumbotron from "./App.Jumbotron.vue";
+import ComicCard from "./ComicCard.vue";
 
 export default {
   name: "ComicsList",
+  components: { ComicCard },
   data() {
     return {
       comics: [
@@ -91,36 +92,31 @@ export default {
       ],
     };
   },
-  components: { AppJumbotron },
 };
 </script>
 
 <template>
-
-<!--Comics section-->
-    <section class="comics">
-      <div class="container">
-        <h3>Current Series</h3>
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-2" v-for="comic in comics">
-            <div class="card">
-              <img :src="comic.thumb" alt="" />
-              <h5>lorem</h5>
-            </div>
-          </div>
-        </div>
-        <!--/.row-->
-
-        <div class="load_more">
-          <button>load more</button>
+  <!--Comics section-->
+  <section class="comics">
+    <div class="container">
+      <h3>Current Series</h3>
+      <div class="row">
+        <div
+          class="col-12 col-md-4 col-lg-2"
+          v-for="(comic, index) in comics"
+          :key="'index_' + comic.title"
+        >
+          <ComicCard :title="comic.title" :thumb="comic.thumb"></ComicCard>
         </div>
       </div>
-      <!--/.container-->
-    </section>
+      <!--/.row-->
 
-    
-    
-    
+      <div class="load_more">
+        <button>load more</button>
+      </div>
+    </div>
+    <!--/.container-->
+  </section>
 </template>
 
 <style scoped>
@@ -130,11 +126,6 @@ export default {
     padding: 1rem 2rem;
     background-color: var(--dc-primary);
     margin: -2rem 0 0.5rem;
-  }
-  & img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: top;
   }
 }
 .load_more {
