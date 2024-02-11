@@ -9,19 +9,19 @@ export default {
           icon: '/img/buy-comics-digital-comics.png'
         },
         {
-          text: 'Digital comics',
-          icon: '/img/buy-comics-digital-comics.png'
+          text: 'DC merchandise',
+          icon: '/img/buy-comics-merchandise.png'
         },
         {
-          text: 'Digital comics',
-          icon: '/img/buy-comics-digital-comics.png'
+          text: 'Subscription',
+          icon: '/img/buy-comics-subscriptions.png'
         },
         {
-          text: 'Digital comics',
-          icon: '/img/buy-comics-digital-comics.png'
+          text: 'Comic shop location',
+          icon: '/img/buy-comics-shop-locator.png'
         },
         {
-          text: 'Digital comics',
+          text: 'DC power visa',
           icon: '/img/buy-comics-digital-comics.png'
         }
       ]
@@ -62,7 +62,7 @@ export default {
     & .item {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: .5rem;
     }
   }
   
