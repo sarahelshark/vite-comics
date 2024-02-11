@@ -121,16 +121,16 @@ export default {
             <img src="/img/footer-twitter.png" alt="" />
           </a>
           <a href="">
-            <img src="/img/footer-twitter.png" alt="" />
+            <img src="/img/footer-facebook.png" alt="" />
           </a>
           <a href="">
-            <img src="/img/footer-twitter.png" alt="" />
+            <img src="/img/footer-periscope.png" alt="" />
           </a>
           <a href="">
-            <img src="/img/footer-twitter.png" alt="" />
+            <img src="/img/footer-pinterest.png" alt="" />
           </a>
           <a href="">
-            <img src="/img/footer-twitter.png" alt="" />
+            <img src="/img/footer-youtube.png" alt="" />
           </a>
         </div>
       </div>
