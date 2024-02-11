@@ -123,4 +123,10 @@ export default {
 .container {
   flex-direction: column;
 }
+.comics{
+  & img {
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
 </style>
