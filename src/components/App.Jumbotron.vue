@@ -2,7 +2,9 @@
 export default {
   name: "AppJumbotron",
   data() {
-    
+    return{
+      
+    }
   },
 };
 </script>

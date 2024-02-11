@@ -104,7 +104,6 @@ export default {
         <div
           class="col-12 col-md-4 col-lg-2"
           v-for="(comic, index) in comics"
-          :key="index_+ ' ' + comic.title"
         >
           <ComicCard :title="comic.title" :thumb="comic.thumb"></ComicCard>
         </div>
